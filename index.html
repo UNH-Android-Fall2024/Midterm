@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albert Einstein</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
+                <li><a href="#" onclick="showAllSections(event)">HOME</a></li>
+                <li><a href="#about" onclick="showSection('about')">BIOGRAPHY</a></li> 
+                <li><a href="#publications" onclick="showSection('publications')">PUBLICATIONS</a></li>
+                <li><a href="#hobbies" onclick="showSection('hobbies')">HOBBIES</a></li>
+                <li><a href="#gallery" onclick="showSection('gallery')">GALLERY</a></li>
+                <li><a href="#blogs" onclick="showSection('blogs')">BLOGS</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+        <div class="container1">
+        <section id="home" class="section">
+            <h1 class="main-heading">Welcome to Albert Einstein's World</h1>
+            <p class="paragraph">Explore the life, work, and legacy of one of the greatest minds in history.</p>
+        </section>
+        </div>
+        <div class="about-container">
+            <section id="about" class="section">
+                <div class="about-image">
+                    <img src="tongue einstein.jpg" alt="Albert Einstein">
+                </div>
+                <h2 class="main-heading">About</h2>
+                <p class="paragraph">
+                    Albert Einstein was a theoretical physicist who developed the theory of relativity, one of the two pillars of modern physics. He received the 1921 Nobel Prize in Physics for his explanation of the photoelectric effect, a key step in the development of quantum theory. In 1905, sometimes described as his annus mirabilis (miracle year), he published four groundbreaking papers. These works revolutionized physics and reshaped humanity's understanding of space and time.
+                </p>
+                <span id="more-about" style="display: none;">
+                <p class="paragraph"> Born in the German Empire, Einstein moved to Switzerland in 1895, forsaking his German citizenship (as a subject of the Kingdom of Württemberg) the following year. In 1897, at the age of seventeen, he enrolled in the mathematics and physics teaching diploma program at the Swiss federal polytechnic school in Zurich, graduating in 1900. He acquired Swiss citizenship a year later, which he kept for the rest of his life, and afterwards secured a permanent position at the Swiss Patent Office in Bern. In 1905, he submitted a successful PhD dissertation to the University of Zurich. In 1914, he moved to Berlin to join the Prussian Academy of Sciences and the Humboldt University of Berlin, becoming director of the Kaiser Wilhelm Institute for Physics in 1917; he also became a German citizen again, this time as a subject of the Kingdom of Prussia. In 1933, while Einstein was visiting the United States, Adolf Hitler came to power in Germany. Horrified by the Nazi persecution of his fellow Jews, he decided to remain in the US, and was granted American citizenship in 1940. On the eve of World War II, he endorsed a letter to President Franklin D. Roosevelt alerting him to the potential German nuclear weapons program and recommending that the US begin similar research.</p>
+               <p class="paragraph"> In 1905, sometimes described as his annus mirabilis (miracle year), he published four groundbreaking papers. In them, he outlined a theory of the photoelectric effect, explained Brownian motion, introduced his special theory of relativity, and demonstrated that if the special theory is correct, mass and energy are equivalent to each other. In 1915, he proposed a general theory of relativity that extended his system of mechanics to incorporate gravitation. A cosmological paper that he published the following year laid out the implications of general relativity for the modeling of the structure and evolution of the universe as a whole. In 1917, Einstein wrote a paper which introduced the concepts of spontaneous emission and stimulated emission, the latter of which is the core mechanism behind the laser and maser, and which contained a trove of information that would be beneficial to developments in physics later on, such as quantum electrodynamics and quantum optics.</p>
+                </span>
+                <button id="readMoreBtn" onclick="toggleAbout()">Continue Reading</button>
+        </section>
+        </div>
+        <div class="container1">
+        <section id="publications" class="section">
+            <h2 class="main-heading">PUBLICATIONS</h2>
+            <p class="paragraph">Albert Einstein's scientific works revolutionized physics and reshaped humanity's understanding of the universe. His Special and General Theories of Relativity redefined space, time, and gravity, proving that time is relative and gravity warps space-time. His E=mc² equation demonstrated the equivalence of energy and mass, leading to groundbreaking advancements in nuclear energy. He also made significant contributions to quantum mechanics, particularly in explaining the photoelectric effect, which laid the foundation for modern electronics and quantum theory. His research on Brownian motion provided definitive proof of atomic theory, and his insights into wave-particle duality shaped the development of quantum physics. Einstein's publications continue to influence science, technology, and our understanding of the cosmos. Click below to explore his most famous works.</p>
+            <button class="see-more-btn" onclick="togglePublications()">Learn More</button>
+            <div id="publications-container" class="publications-container">
+                <div class="publication">
+                    <p><strong>Quantum Theory of Radiation</strong></p>
+                    <p>Explored how light interacts with atoms, leading to the principle of stimulated emission and the development of lasers.</p>
+                </div>
+                <div class="publication">
+                    <p><strong>Investigations on the Theory of Brownian Movement</strong></p>
+                    <p>Provided statistical analysis proving the existence of atoms through the study of microscopic particle motion in fluids.</p>
+                </div>
+                <div class="publication">
+                    <p><strong>Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?</strong></p>
+                    <p>Raised fundamental questions about quantum entanglement, sparking debates that continue in quantum mechanics.</p>
+                </div>
+                <div class="publication">
+                    <p><strong>Unified Field Theory</strong></p>
+                    <p>Attempted to combine gravity and electromagnetism into a single theoretical framework, though incomplete, it influenced modern physics.</p>
+                </div>
+                <div class="publication">
+                    <p><strong>Relativity: The Special and General Theory</strong></p>
+                    <p>An introduction to relativity, written for a general audience.</p>
+                </div>
+                <div class="publication">
+                    <p><strong>Does the Inertia of a Body Depend Upon Its Energy Content?</strong></p>
+                    <p>This paper introduced E=mc², linking energy and mass.</p>
+                </div>
+                <div class="publication">
+                    <p><strong>On the Electrodynamics of Moving Bodies</strong></p>
+                    <p>The foundation of special relativity, changing our view of time and space.</p>
+                </div>
+                <div class="publication">
+                    <p><strong>The Foundation of the General Theory of Relativity</strong></p>
+                    <p>Introduced Einstein’s field equations, describing gravity as space-time curvature.</p>
+                </div>
+                <div class="publication">
+    <p><strong>The Photoelectric Effect</strong></p>
+    <p>Einstein’s work explaining how light ejects electrons from a material, which provided crucial support for quantum theory.</p>
+</div>
+<div class="publication">
+    <p><strong>The Cosmological Constant</strong></p>
+    <p>Introduced in Einstein’s equations of general relativity, this concept later played a role in modern dark energy research.</p>
+</div>
+</div>
+        </section>
+        <div class="hobbies-gallery-container">
+            <section id="hobbies" class="section">
+                <h2 class="main-heading">HOBBIES</h2>
+                <div class="hobby-container">
+                    <div class="hobby">
+                        <img src="violin AE.jpg" alt="Violin">
+                        <p><strong>Playing the Violin</strong><br>Einstein had a deep love for music and played the violin passionately, often enjoying Mozart and Bach.</p>
+                    </div>
+                    <div class="hobby">
+                        <img src="piano AE.jpg" alt="Piano">
+                        <p><strong>Playing the Piano</strong><br>He also enjoyed playing the piano, using music as a way to relax and think creatively.</p>
+                    </div>
+                    <div class="hobby">
+                        <img src="sailing AE.jpg" alt="Sailing">
+                        <p><strong>Sailing</strong><br>Einstein loved sailing and spent time on the water, despite not being a strong swimmer. It was one of his favorite pastimes for relaxation.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="gallery" class="section">
+                <h2 class="main-heading">GALLERY</h2>
+                <div class="gallery-container">
+                    <img src="image2 AE.jpg" alt="Einstein Image 1">
+                    <img src="image3 AE.jpeg" alt="Einstein Image 2">
+                    <img src="image4 AE.jpg" alt="Einstein Image 3">
+                    <img src="image5 AE.jpg" alt="Einstein Image 4">
+                    <img src="image6 AE.jpg" alt="Einstein Image 5">
+                    <img src="violin AE.jpg" alt="Einstein Image 7">
+                    <img src="sailing AE.jpg" alt="Einstein Image 8">
+                    <img src="tongue einstein.jpg" alt="Einstein Image 9">
+                    <img src="image7 AE.jpeg" alt="Einstein Image 9">
+                </div>
+            </section>
+        </div>
+        <section id="blogs" class="section">
+            <h2 class="main-heading">BLOGS</h2>
+            <div class="blog-container">
+                <div class="blog">
+                    <img src="https://img.icons8.com/?size=100&id=rQfEoE6vlrLk&format=png&color=000000" alt="Twitter Icon">
+                    <p>Follow Einstein discussions and related scientific content on Twitter.</p>
+                    <a href="https://twitter.com" target="_blank">Visit Twitter</a>
+                </div>
+                <div class="blog">
+                    <img src="https://img.icons8.com/?size=100&id=16776&format=png&color=000000" alt="Wikipedia Icon">
+                    <p>Read in-depth articles about Einstein's life and work on Wikipedia.</p>
+                    <a href="https://en.wikipedia.org/wiki/Albert_Einstein" target="_blank">Visit Wikipedia</a>
+                </div>
+                <div class="blog">
+                    <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=000000" alt="LinkedIn Icon">
+                    <p>Explore professional discussions and networks related to Einstein.</p>
+                    <a href="https://www.linkedin.com" target="_blank">Visit LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="container1">
+    <footer>
+        <p>&copy; 2025 Albert Einstein Website</p>
+    </footer>
+    </div>
+</body>
+</html>
